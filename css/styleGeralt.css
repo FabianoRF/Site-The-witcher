@@ -1,0 +1,73 @@
+h1, h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div.interface h1{
+    margin-top: 10px;
+    margin: 30px;
+    text-align: center;
+}
+
+div.conteudoPrincipal{
+    display: flex;
+}
+
+div.conteudoPrincipal section{
+    display: block;
+    width: 65%;
+    margin: 20px;
+    text-indent: 4%;
+}
+
+div.conteudoPrincipal aside{  
+    width: 35%;
+    margin-right: 20px;
+    height: 600px;
+
+    border: 1px solid #D7D6D6;
+    background-color: black;
+    
+}
+
+div.conteudoPrincipal aside div.paiBtn{
+    display: flex;
+    margin: 10px;
+}
+
+input.btnSelecionado{
+    height: 30px;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    
+
+    color: #D7D6D6;
+    font: 700 16px 'Exo 2', sans-serif;
+    border: 1px solid  #D7D6D6;
+    transition: background-color 0.2s;
+}
+
+input.btnSelecionado:hover{
+    background-color: gray;
+}
+
+input.btnSelecionado2{
+    background-color: gray;
+}
+
+.btnSelecionado2{
+    background-color: gray;
+}
+
+div.conteudoPrincipal aside div.imgGeralt{
+    position: relative;
+    height: 480px;
+}
+
+div.conteudoPrincipal aside div.imgGeralt img{
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    
+}

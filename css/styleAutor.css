@@ -1,0 +1,39 @@
+div.interface{
+    padding: 20px;
+}
+
+div.interface h1{
+    text-align: center;
+}
+
+div.interface p{
+    text-indent: 4%;
+}
+
+div.interface figure{
+    text-align: center;
+}
+div.interface figure img{
+    height: 400px;
+    width: 600px;
+}
+
+div.interface div.obras{
+    display:flex;
+    justify-content: space-around;
+}
+
+div.interface div.obras ul li{
+    padding: 5px;
+}
+
+div.interface div.obras ul a{
+    text-decoration: none;
+    font-weight: 700 ;
+    color: #D7D6D6;
+}
+
+div.interface div.obras ul a:hover{
+    text-decoration: underline;
+    color: #8f8f8f;
+}

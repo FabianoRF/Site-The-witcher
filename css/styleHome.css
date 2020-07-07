@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap');
+
+
+ div.interface div.destaquePrincipal{
+    
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+ div.interface div.destaquePrincipal a{
+    transition: opacity 0.5s;
+}
+
+ div.interface div.destaquePrincipal a:hover{
+    opacity: 0.6;
+}
+
+
+ div.interface div.textoIntro{
+    color: #D7D6D6;
+    text-align: center;
+    margin: 25px;
+}
+
+ div.interface div.textoIntro p{
+    text-indent: 4%;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700 ;
+    color: #D7D6D6;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #8f8f8f;
+}
+
+div.interface div.destaqueGames{
+    display: flex;
+    justify-content: space-around;
+}
+
+div.destaqueGames img{
+    height: 270px;
+    width: 200px;
+}
