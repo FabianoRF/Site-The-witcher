@@ -1,14 +1,14 @@
-1 - Index - video e frase de entrada
+1 - Index - video e frase de entrada- ok
 
-2 - Home - pagian inicial com intro e destaques bem animados
+2 - Home - pagian inicial com intro e destaques bem animados - ok em partes
 
-7 - geralt
+7 - geralt - ok
 
 3 - Personagens Principais
 
 4 - Games Secundarios - gamesExtras
 
-8 - tw1 
+8 - tw1 - fazendo
 
 9 - tw2
 
@@ -16,6 +16,6 @@
 
 5 - Série
 
-11 - Andrzej Sapkowski biblio - biblioAutor
+11 - Andrzej Sapkowski biblio - biblioAutor - ok
 
 6 - livros parte 
