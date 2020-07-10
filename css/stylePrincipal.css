@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     outline: 0;
-    box-sizing: border-box;/*nao faz com que o padding por exemplo aumente o tamanho do box*/
+    box-sizing: border-box;
 }
 
 body{
@@ -17,9 +17,19 @@ body{
     text-align: justify;
 }
 
+
+h1,h2{
+    text-align: center;
+}
+
+p{
+    text-indent: 10px;
+    padding: 20px;
+}
+
 /*Início cabaçalho*/
 header.cabecalho{  
-    z-index: 1;/*coloca como prioridade 1 de exibição, entaõ fica acima do hover*/
+    z-index: 1;/*coloca como prioridade 1 de exibição, entâo fica acima do hover*/
     position: sticky;/*position que é substituido quando algo assume o valor*/
     top: 5px;
     width: 100%;
@@ -96,13 +106,13 @@ ol.menuCabecalho ol.subMenuCabecalho li a{
 main{
     background: url(../imagens/fundo.jpg) no-repeat fixed;  
     background-size: 100%;
- 
-    
 }
 
 div.interface{
-    margin: auto 40px;
+    margin: 0px auto ;
     background-color: rgba(0, 0, 0, 0.9);
+
+    max-width: 1226px;/*calculado com base em resoluçoes de 1326px de largura, simulando uma margem de 70 px de cada lado = home*/
 }
 
 /*fim Main*/

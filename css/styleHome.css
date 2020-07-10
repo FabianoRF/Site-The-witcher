@@ -20,11 +20,11 @@ div.interface{
     min-height: 12%;
     z-index: 2;
     top: 87%;
+    margin: auto 70px;
 }
 
 
  div.interface div.destaquePrincipal{
-    
     display: flex;
     justify-content: space-around;
     margin: 10px;
