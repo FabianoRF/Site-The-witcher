@@ -5,10 +5,11 @@ Paginas concluidas:
 8 - tw1 - conferido
 9 - tw2 - conferido
 4 - Games Secundarios - conferido
+5 - Série - conferido
 
 Paginas a fazer:
 3 - Personagens Principais
-5 - Série
+
 6 - livros
 
 Em andamento:
