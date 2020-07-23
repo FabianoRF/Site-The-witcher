@@ -1,8 +1,11 @@
 div.interface{
     display: grid;
-    grid-row-gap: 30px;
-    
+    row-gap: 10px;
     padding: 20px;
+}
+
+div.interface p{
+    row-gap: 0px;
 }
 
 ul{
@@ -39,16 +42,28 @@ section.capaEspec figure#capaTW1 img{
 }
 
 section.personagens{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 20px;
     text-align: center;
 }
 
-section.personagens img{
+section.personagensTW1{
+    display: flex;
+    justify-content: space-around;  
+    text-align: center;
+}
+
+section.personagens img, section.personagensTW1 img{
     height: 270px;
     width: 200px;
     overflow: hidden;
     transition: opacity 0.5s;
+}
+
+
+a#ultimo{/*coloca ultima imagem no meio apenas na pag TW3*/
+    grid-column-start: 2;
 }
 
 a.aPersonagem:hover img{
