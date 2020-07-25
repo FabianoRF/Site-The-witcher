@@ -1,10 +1,11 @@
 div.interface{
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: grid;
     row-gap: 10px;
-    padding: 20px;
 }
 
-div.interface p{
+div.interface p, div.interface i{
     row-gap: 0px;
 }
 
@@ -48,13 +49,17 @@ section.personagens{
     text-align: center;
 }
 
-section.personagensTW1{
+section.personagensTW1,
+section.personagensSerie{
     display: flex;
     justify-content: space-around;  
     text-align: center;
 }
 
-section.personagens img, section.personagensTW1 img{
+section.personagens img, 
+section.personagensTW1 img,
+section.personagensSerie img
+{
     height: 270px;
     width: 200px;
     overflow: hidden;
@@ -69,4 +74,11 @@ a#ultimo{/*coloca ultima imagem no meio apenas na pag TW3*/
 a.aPersonagem:hover img{
     opacity: 0.6;
 
+}
+
+div.interface div.fotoPersonagem{
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+    
 }

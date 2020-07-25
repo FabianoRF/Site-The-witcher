@@ -14,17 +14,19 @@ body{
     background-color: black;
     font: 500 16px 'Exo 2', sans-serif;
     color: #D7D6D6;
-    text-align: justify;
+    text-align: left;
 }
 
 
-h1,h2{
-    text-align: center;
+h1,h2,h3,h4{
+    text-align: left;
+    text-indent: 20px;
 }
 
-p{
-    text-indent: 4%;
-    padding: 20px;
+p, i{
+    text-indent: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /*Início cabaçalho*/
@@ -112,7 +114,7 @@ div.interface{
     margin: 0px auto ;
     background-color: rgba(0, 0, 0, 0.9);
 
-    max-width: 1226px;/*calculado com base em resoluçoes de 1326px de largura, simulando uma margem de 70 px de cada lado = home*/
+    max-width: calc(100% - 140px) ;/*calculado com 70  px de margem*/
 }
 
 /*fim Main*/
@@ -150,4 +152,12 @@ footer#rodape p{
 footer#rodape nav#redes ol#olRedes li{
     display: inline-block;
     
+}
+
+.center{
+    text-align: center;
+}
+
+.italico{
+    font-style: italic;
 }

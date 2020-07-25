@@ -1,74 +1,140 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>modelo</title>
-        <meta charset="UTF-8"/>
-        <meta name="author" content="Fabiano">
-        <meta name="keywords" content="the witcher, witcher, livro, série, historia">
-        <link rel="stylesheet" href="../css/stylePrincipal.css">
 
-    </head>
-    <body>
-       
-        <header class="cabecalho">
-            <div class="logo"><img src="../imagens/logo.png" id="logo"></div>
-            <nav class="menu">
-                <ol class="menuCabecalho">
-                    <li><a class="linksMenu" href="index.html">Home</a></li>
-                    <li>
-                        <a href="paginas/livros.html">Livros</a>
-                        <ol class="subMenuCabecalho">
-                            <a href="livro1.html"><li>Livros</li></a>
-                            <a href="biblioAutor.html"><li>O Autor</li></a>
-                        </ol>
-                    </li>
-                    <li>
-                        <a href="paginas\jogos.html">Jogos</a>
-                        <ol class="subMenuCabecalho">
-                            <a href="paginas/game1.html"><li>The Witcher</li></a>
-                            <a href="paginas/game2.html"><li>The Witcher 2: Assassins Of Kings</li></a>
-                            <a href="paginas/game3.html"><li>The Witcher 3: WILD HUNT</li></a>
-                            <a href="paginas/game_extras.html"><li>EXTRAS</li></a>
-                        </ol>
-                    </li>
-                    <li><a href="paginas\serie.html">Série</a></li>
-                    <li>
-                        <a href="paginas\personagens.html">Personagens</a>
-                        <ol class="subMenuCabecalho">
-                            <a href="paginas/geralt.html"><li>Geralt</li></a>
-                            <a href="paginas/personagens.html"><li>Demais</li></a>
-                        </ol>
-                    </li>
-                </ol>
-            </nav>
-        </header>
-        
-        <!--Fim cabeçalho-->
+<head>
+    <title>Livros The Witcher</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Fabiano">
+    <meta name="keywords" content="the witcher, witcher, livro, série, historia">
+    <link rel="stylesheet" href="../css/stylePrincipal.css">
+    <link rel="stylesheet" href="../css/styleConteudo.css">
 
-        <main class="conteudo"><!--inicio do espaço para conteudo da pagina-->
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="logo"><a href="home.html"><img src="../imagens/logo.png" id="logo"></a></div>
+        <nav class="menu">
+            <ol class="menuCabecalho">
+                <li><a class="linksMenu" href="home.html">Home</a></li>
+                <li>
+                    <a href="livro1.html">Livros</a>
+                    <ol class="subMenuCabecalho">
+                        <a href="livro1.html">
+                            <li>Livros</li>
+                        </a>
+                        <a href="biblioAutor.html">
+                            <li>O Autor</li>
+                        </a>
+                    </ol>
+                </li>
+                <li>
+                    <a href="game1.html">Jogos</a>
+                    <ol class="subMenuCabecalho">
+                        <a href="game1.html">
+                            <li>The Witcher</li>
+                        </a>
+                        <a href="game2.html">
+                            <li>The Witcher 2: Assassins Of Kings</li>
+                        </a>
+                        <a href="game3.html">
+                            <li>The Witcher 3: WILD HUNT</li>
+                        </a>
+                        <a href="gameExtras.html">
+                            <li>EXTRAS</li>
+                        </a>
+                    </ol>
+                </li>
+                <li><a href="serie.html">Série</a></li>
+                <li>
+                    <a href="geralt.html">Personagens</a>
+                    <ol class="subMenuCabecalho">
+                        <a href="geralt.html">
+                            <li>Geralt</li>
+                        </a>
+                        <a href="personagens.html">
+                            <li>Demais</li>
+                        </a>
+                    </ol>
+                </li>
+            </ol>
+        </nav>
+
+    </header>
+
+
+
+    <main class="conteudo">
+        <!--inicio do espaço para conteudo da pagina-->
+
+        <div class="interface">
+
+            <h1 class="center">Livros</h1>
+            <hr>
+            <h2>Contos</h2>
+            <figure id="imagens">
+                <img src="../imagens/capas_contos.png">
+                <figcaption>capas do livros de contos</figcaption>
+            </figure>
+            <h4>O último desejo</h4>
+            <p>O último desejo(The Last Wish) é composto de uma série de contos curtos, porém muito bem construídos e de inspiração nos contos de fada poloneses, além de recriações em “fantasia brutal” de personagens tradicionais das lendas européias. Recomendado, gostoso de ler. Diferente das fantasias mais complexas e “sérias” dos últimos tempos, “The Last Wish” oferece uma diversão mais simples e com os pés firmes em sua ascendência pulp, mesmo que, muitas vezes, faça humor com os clichês narrativos desse gênero da literatura.</p>
+            <h4>A espada do destino</h4>
+            <p> Durante os contos, Geralt percorre o país em busca de trabalhos remunerados para caçar monstros, mas aos poucos começa a perceber que, enquanto alguns são realmente maléficos, outros são as vítimas do pecado, o mal ou ingenuidade, sofrendo com o abuso dos reinos humanos. Uma coleção de histórias do mundo de Geralt a Witcher, introduzindo alguns dos personagens mais amados deste universo. Uma leitura obrigatória para os fãs dos romances e jogos iguais. Os diálogos são muito bons, extremamente realistas, e tornam a leitura muito agradável e divertida.</p>
+            <hr>
+            <h2>Romances</h2>
+            <figure id="imagens">
+                <img src="../imagens/capas_romances.png">
+                <figcaption>Capas dos livros de romances</figcaption>
+            </figure>
+            <h4>O sangue dos Elfos</h4>
+            <p>Por mais de um século, humanos, anões, gnomos e elfos viveram juntos em relativa paz. Mas os tempos mudaram, e agora as diversas raças do mundo da série The Witcher estão lutando mais uma vez. Geralt de Rivia, o assassino astuto conhecido como “Witcher” relutantemente aceita treinar uma menina(Ciri) que teria o poder de mudar o mundo – para o bem ou para o mal. Como a ameaça de guerra paira sobre a terra e que a menina sendo caçada por seus poderes extraordinários, torna-se a responsabilidade de Geralt para protegê-la todos. Para isso contará com muitos aliados e terá que enfrentar inimigos poderosos.</p>
+
+            <h4>O Tempo do Desprezo</h4>
+            <p>A continuação da saga do bruxo Geralt. Agora ele precisa proteger Ciri, sua pupila, por ela ser a jovem da profecia sobre o fim do mundo, com o poder de mudar o mundo para o bem ou para o mal. Entretanto, com o mundo mergulhado em uma guerra horrenda, diversas facções buscam raptar e usar os fantásticos poderes de Ciri. Nesse livro um golpe de estado ameaça a poderosa Guilda dos Magos, a guerra irrompe em todos os reinos, e Geralt acaba tendo que lutar pela própria vida, ao enfrentar inimigos muito mais poderosos do que ele, ao mesmo tempo que Ciri, a jovem em cujas mãos está o destino do mundo, desapareceu.</p>
+
+            <h4>Batismo de Fogo</h4>
+            <p>A Guilda dos Magos foi destruída por um golpe de estado, que deixou Geralt muito ferido. Enquanto a guerra toma conta de todos os reinos, e o futuro da magia está sob perigo, todos os magos que sobreviveram tentam prevenir o fim de tudo. Mas para isso, será preciso encontrar Ciri, a herdeira do reino de Cintra, que desapareceu. Ferido ou não, Geralt precisa encontrar Ciri, sua antiga protegida, que tem a chave do destino do mundo.</p>
             
-            <div class="interface">
-                
+            <h4>A Torre da Andorinha</h4>
+            <p>O mundo está engolfado em uma guerra total. Ciri, a filha da profecia, desapareceu. Caçada por amigos e inimigos igualmente, ela se disfarçou como uma bandida e viveu livre pela primeira vez em sua vida. Mas a rede ao seu redor está se fechando. Geralt, o Witcher, reuniu um grupo de aliados determinados a resgatá-la. Ambos os lados da guerra enviaram mercenários brutais para caçá-la. Seus crimes a fizeram famosa. Há apenas um lugar que pode ser o seu refúgio. A torre da andorinha a está esperando.</p>
 
-            </div>
+            <h4>A Dama do Lago</h4>
+            <p>A obra foi escrita em 2013, embora a saga “principal” do Witcher seja da década de 90. Considerando a ordem lógica das obras da saga, “Tempo de Tempestade” seria o livro 1. Se trata de uma hístoria linear que aconteceu antes do Ultimo Desejo, complementando algumas historias e personagens. Foi considerado como uma agrado aos fãs por parte do autor.</p>
 
+
+            <hr>
+            <h2>HQS</h2>
+            <figure id="imagens">
+                <img src="../imagens/capas_HQS.png">
+                <figcaption>Capas dos três volumes das HQS</figcaption>
+            </figure>
+
+            <p>As edições em quadrinhos são fruto de uma parceria entre a CD Projekt Red e a Dark Horse. Lançadas originalmente como minisséries, os quadrinhos foram encadernados em dois volumes. Nos quadrinhos, Geralt tende a usar os mesmos recursos que vemos nos jogos (usando os sinais com bastante frequência, visto que fazem parte do gameplay do jogo).</p>
+            <h4>Sinopses</h4>
+            <p>No primeiro volume da HQ, A Casa de Vidro, o leitor é apresentado ao protagonista Geralt, um caçador de monstros que encontra um pescador viúvo, cujo cadáver vingativo da esposa habita uma mansão misteriosa, a casa de vidro, e luta com terríveis criaturas. A continuação, Os Filhos da Raposa, mostra a trajetória do protagonista a bordo de um navio repleto de criminosos. Um desses perigosos personagens esconde um segredo que pode arruinar as vidas de todos os tripulantes da embarcação, colocando-os nas mãos da vingativa mãe raposa. no terceiro e ultimo volume, Geralt, o bruxo e caçador de monstros, se junta a Ciri em uma aparente simples missão de resgate, que acaba se tornando complicada e perigosa. Nela, um velho inimigo do passado retorna para assombrar em um plano mortal de vingança, em que nem tudo é o que aparenta ser.</p>
+           
         </div>
 
-        <footer id="rodape"><!--inicio rodape-->
-            
+        <footer id="rodape">
+            <!--inicio rodape-->
+
             <p><a href="contato.html">Contato</a> <br><br> &copy; 2020 TODOS OS DIREITOS RESERVADOS
             </p>
 
             <nav id="redes">
                 <ol id="olRedes">
-                    <li><a href="https://www.instagram.com/witchernetflix/?hl=pt-br"><img src="../imagens/ic_instagram.png"></a></li>
+                    <li><a href="https://www.instagram.com/witchernetflix/?hl=pt-br"><img
+                                src="../imagens/ic_instagram.png"></a></li>
                     <li><a href="https://facebook.com/thewitcher"><img src="../imagens/ic_facebook.png"></a></li>
                     <li><a href="https://twitter.com/witchergame"><img src="../imagens/ic_twitter.png"></a></li>
                 </ol>
             </nav>
-        </footer><!--fim rodape-->
+        </footer>
+        <!--fim rodape-->
 
         <script src="../js/script.js"></script>
 
-        </body>
+</body>
+
 </html>
