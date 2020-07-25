@@ -1,6 +1,10 @@
 /* Arquivo de estilo principal*/
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap');
 
+:root{
+    --primary: #D7D6D6;
+    --links: #8f8f8f;
+}
 
 /*Zera as formatações previas*/
 *{
@@ -13,7 +17,7 @@
 body{
     background-color: black;
     font: 500 16px 'Exo 2', sans-serif;
-    color: #D7D6D6;
+    color: var(--primary);
     text-align: left;
 }
 
@@ -42,8 +46,8 @@ header.cabecalho{
 
     justify-content: space-between;
     background-color: black;
-    border-top: 2px solid #D7D6D6;
-    border-bottom: 2px solid #D7D6D6;
+    border-top: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -70,7 +74,7 @@ ol.menuCabecalho li{
 ol.menuCabecalho li a{
     display: block;
     text-decoration: none;
-    color: #D7D6D6;
+    color: var(--primary);
     
     font-size: 18px;
     font-weight: 700;
@@ -85,7 +89,7 @@ ol.menuCabecalho ol.subMenuCabecalho{
 }
 
 ol.menuCabecalho ol.subMenuCabecalho li{
-    color: #D7D6D6;
+    color: var(--primary);
     display: flex;
     text-align: left;
 }
@@ -99,7 +103,7 @@ ol.menuCabecalho li:hover ol.subMenuCabecalho{
 }
 
 ol.menuCabecalho ol.subMenuCabecalho li a{
-    color: #D7D6D6;
+    color: var(--primary);
 }
 
 /*Final cabaçalho*/
@@ -123,12 +127,12 @@ div.interface{
 a{
     text-decoration: none;
     font-weight: 700 ;
-    color: #D7D6D6;
+    color: var(--primary);
 }
 
 a:hover{
     text-decoration: underline;
-    color: #8f8f8f;
+    color: var(--links);
 }
 
 
@@ -146,7 +150,7 @@ footer#rodape{
 }
 
 footer#rodape p{
-    color: #D7D6D6;
+    color: var(--primary);
 }
 
 footer#rodape nav#redes ol#olRedes li{

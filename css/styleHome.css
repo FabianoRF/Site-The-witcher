@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap');
 
+header.cabecalho{
+    position: fixed;
+    top: 2px;
+}
 
 main{
     background: url(../imagens/fundo.jpg) no-repeat fixed;
@@ -9,6 +13,7 @@ main{
     height: 88%;
     top: 0;
     left: 0;
+
     
     position: fixed;
     overflow: hidden;
@@ -18,35 +23,77 @@ div.interface{
     background-color: black;
     position: absolute;
     min-height: 12%;
-    z-index: 2;
+    
     top: 87%;
     margin: auto 70px;
 }
 
 
- div.interface div.destaquePrincipal{
+div.interface div.destaquePrincipal{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    
+    min-height: 70vh;
     margin: 10px;
 }
 
- div.interface div.destaquePrincipal a{
-    transition: opacity 0.5s;
+
+
+div.interface div.destaquePrincipal div.box{
+    position: relative;
+    display: flex;
+    width: 350px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+
+
+    transition: 0.5s;
+    overflow: hidden;
+
 }
 
- div.interface div.destaquePrincipal a:hover{
-    opacity: 0.6;
+
+div.interface div.destaquePrincipal div.box:hover{
+    height: 400px;
 }
 
-
- div.interface div.textoIntro{
-    color: #D7D6D6;
-    text-align: center;
-    margin: 25px;
+div.interface div.destaquePrincipal div.box div.imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    padding: 10px;
+    box-sizing: border-box;
 }
 
- div.interface div.textoIntro p{
-    text-align: justify;
+div.interface div.destaquePrincipal div.box div.imgBx img{
+    max-width: 100%;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+div.interface div.destaquePrincipal div.box:hover div.imgBx img{
+    opacity: 1;
+}
+
+.box .content{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    height: 90px;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.box:hover .content{
+    opacity: 1;
 }
 
 div.interface div.destaqueGames{
