@@ -1,114 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Geralt</title>
-        <meta charset="UTF-8"/>
-        <meta name="author" content="Fabiano">
-        <meta name="keywords" content="the witcher, witcher, livro, série, historia">
-        <link rel="stylesheet" href="../css/stylePrincipal.css">
-        <link rel="stylesheet" href="../css/styleGeralt.css">
 
-    </head>
-    <body>
-       
-        <header class="cabecalho">
-            <div class="logo"><img src="../imagens/logo.png" id="logo"></div>
-            <nav class="menu">
-                <ol class="menuCabecalho">
-                    <li><a class="linksMenu" href="home.html">Home</a></li>
-                    <li>
-                        <a href="livro1.html">Livros</a>
-                        <ol class="subMenuCabecalho">
-                            <a href="livro1.html"><li>Livros</li></a>
-                            <a href="biblioAutor.html"><li>O Autor</li></a>
-                        </ol>
-                    </li>
-                    <li>
-                        <a href="jogos.html">Jogos</a>
-                        <ol class="subMenuCabecalho">
-                            <a href="game1.html"><li>The Witcher</li></a>
-                            <a href="game2.html"><li>The Witcher 2: Assassins Of Kings</li></a>
-                            <a href="game3.html"><li>The Witcher 3: WILD HUNT</li></a>
-                            <a href="gameExtras.html"><li>EXTRAS</li></a>
-                        </ol>
-                    </li>
-                    <li><a href="serie.html">Série</a></li>
-                    <li>
-                        <a href="personagens.html">Personagens</a>
-                        <ol class="subMenuCabecalho">
-                            <a href="geralt.html"><li>Geralt</li></a>
-                            <a href="personagens.html"><li>Demais</li></a>
-                        </ol>
-                    </li>
-                </ol>
-            </nav>
-        </header>
-        
-        <!--Fim cabeçalho-->
+<head>
+    <title>Geralt</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Fabiano">
+    <meta name="keywords" content="the witcher, witcher, livro, série, historia">
+    <link rel="stylesheet" href="../css/stylePrincipal.css">
+    <link rel="stylesheet" href="../css/styleGeralt.css">
 
-        <main class="conteudo"><!--inicio do espaço para conteudo da pagina-->
-            
-            <div class="interface">
-                
-                <h1>Geralt de Rívia</h1>
-                <hr>
+</head>
 
-                <div class="conteudoPrincipal">
-                    <section>
-                        <p>Geralt também é conhecido como Gwynbleidd (que na Língua Antiga significa "Lobo Branco", um nome dado a ele pelas dríades, assim como "Carniceiro de Blaviken").
-                            Apesar do seu nome, Geralt não é de Rívia: ele cresceu sob a tutela dos bruxos de Kaer Morhen no reino de Kaedwen. Com a intenção de parecerem mais confiáveis para clientes em potencial, jovens bruxos são encorajados a utilizar novos sobrenomes pelo mestre Vesemir.
-                            Mais tarde, a Rainha Meve de Lyria o condecorou cavaleiro pelo seu valor na Batalha pela ponte no Yaruga, lhe dando também o título formal "de Rívia", o que agradou-o. Geralt é, portanto, um cavaleiro de Lyria.
-                        </p>
-                        <br>
-                        <hr>
-                        <h2>Bibliografia</h2> 
-                        
-                        
-                        <p>
-                            Geralt é o filho da feiticeira Visenna e, possivelmente, do mercenário Korin. Após seu nascimento, Geralt foi deixado por sua mãe na Escola do Lobo em Kaer Morhen. Ali, Geralt recebeu treinamento e se tornou um bruxo. Ele sobreviveu a várias mutações necessárias para evoluir suas habilidades e passou pela Prova das Ervas. O treinamento e as modificações físicas providenciaram a Geralt capacidades físicas e mentais sobre-humanas como reflexos aguçados, agilidade, força, visão e audição melhorada.
-                            Devido ao seu exitoso sucesso nas provas, Geralt foi escolhido para experimentos com mutagênicos adicionais. E foi ele o único Bruxo sobrevivente. Em consequência disso, seus cabelos são brancos.
-                            No conto Uma Questão de Preço, Geralt evoca a Lei da Surpresa após ser questionado como gostaria de ser recompensado. Meses depois nasce a Criança Surpresa. Cirilla, filha de Pavetta de Cintra com Duny.
-                            Geralt tem uma égua chamada Plotka e todas as suas éguas são nomeadas assim.
-                            Seu melhor amigo é o bardo Jaskier e seu único e verdadeiro amor é Yennefer. 
+<body>
 
-                        </p>
-                    </section>
-                    <aside>
-                        <div class="paiBtn">
-                            <input class="btnSelecionado" id="btn0" type="button" value="Livros" onclick="setImage(0)"> 
-                            <input class="btnSelecionado" id="btn1" type="button" value="TW1" onclick="setImage(1)">
-                            <input class="btnSelecionado" id="btn2" type="button" value="TW2" onclick="setImage(2)">
-                            <input class="btnSelecionado" id="btn3" type="button" value="TW3" onclick="setImage(3)">
-                            <input class="btnSelecionado" id="btn3" type="button" value="Série" onclick="setImage(4)">
-                        </div>
-                        <div class="imgGeralt" ><img id="imgAtual" src="../imagens/geralt_TW3.png" alt=""></div>    
-                        
-                    
-                    </aside>
-                </div>
+    <header class="cabecalho">
+        <div class="logo"><img src="../imagens/logo.png" id="logo"></div>
+        <nav class="menu">
+            <ol class="menuCabecalho">
+                <li><a class="linksMenu" href="home.html">Home</a></li>
+                <li>
+                    <a href="livro1.html">Livros</a>
+                    <ol class="subMenuCabecalho">
+                        <a href="livro1.html">
+                            <li>Livros</li>
+                        </a>
+                        <a href="biblioAutor.html">
+                            <li>O Autor</li>
+                        </a>
+                    </ol>
+                </li>
+                <li>
+                    <a href="jogos.html">Jogos</a>
+                    <ol class="subMenuCabecalho">
+                        <a href="game1.html">
+                            <li>The Witcher</li>
+                        </a>
+                        <a href="game2.html">
+                            <li>The Witcher 2: Assassins Of Kings</li>
+                        </a>
+                        <a href="game3.html">
+                            <li>The Witcher 3: WILD HUNT</li>
+                        </a>
+                        <a href="gameExtras.html">
+                            <li>EXTRAS</li>
+                        </a>
+                    </ol>
+                </li>
+                <li><a href="serie.html">Série</a></li>
+                <li>
+                    <a href="personagens.html">Personagens</a>
+                    <ol class="subMenuCabecalho">
+                        <a href="geralt.html">
+                            <li>Geralt</li>
+                        </a>
+                        <a href="personagens.html">
+                            <li>Demais</li>
+                        </a>
+                    </ol>
+                </li>
+            </ol>
+        </nav>
+    </header>
 
-                
+    <!--Fim cabeçalho-->
+
+    <main class="conteudo">
+        <!--inicio do espaço para conteudo da pagina-->
+
+        <div class="interface">
+
+            <h1>Geralt de Rívia</h1>
+            <hr>
+
+            <div class="conteudoPrincipal">
+                <section>
+                    <p>Geralt também é conhecido como Gwynbleidd (que na Língua Antiga significa "Lobo Branco", um nome
+                        dado a ele pelas dríades, assim como "Carniceiro de Blaviken").
+                        Apesar do seu nome, Geralt não é de Rívia: ele cresceu sob a tutela dos bruxos de Kaer Morhen no
+                        reino de Kaedwen. Com a intenção de parecerem mais confiáveis para clientes em potencial, jovens
+                        bruxos são encorajados a utilizar novos sobrenomes pelo mestre Vesemir.
+                        Mais tarde, a Rainha Meve de Lyria o condecorou cavaleiro pelo seu valor na Batalha pela ponte
+                        no Yaruga, lhe dando também o título formal "de Rívia", o que agradou-o. Geralt é, portanto, um
+                        cavaleiro de Lyria.
+                    </p>
+                    <br>
+                    <hr>
+                    <h2>Bibliografia</h2>
 
 
+                    <p>
+                        Geralt é o filho da feiticeira Visenna e, possivelmente, do mercenário Korin. Após seu
+                        nascimento, Geralt foi deixado por sua mãe na Escola do Lobo em Kaer Morhen. Ali, Geralt recebeu
+                        treinamento e se tornou um bruxo. Ele sobreviveu a várias mutações necessárias para evoluir suas
+                        habilidades e passou pela Prova das Ervas. O treinamento e as modificações físicas
+                        providenciaram a Geralt capacidades físicas e mentais sobre-humanas como reflexos aguçados,
+                        agilidade, força, visão e audição melhorada.
+                        Devido ao seu exitoso sucesso nas provas, Geralt foi escolhido para experimentos com mutagênicos
+                        adicionais. E foi ele o único Bruxo sobrevivente. Em consequência disso, seus cabelos são
+                        brancos.
+                        No conto Uma Questão de Preço, Geralt evoca a Lei da Surpresa após ser questionado como gostaria
+                        de ser recompensado. Meses depois nasce a Criança Surpresa. Cirilla, filha de Pavetta de Cintra
+                        com Duny.
+                        Geralt tem uma égua chamada Plotka e todas as suas éguas são nomeadas assim.
+                        Seu melhor amigo é o bardo Jaskier e seu único e verdadeiro amor é Yennefer.
+
+                    </p>
+                </section>
+                <aside>
+                    <div class="paiBtn">
+                        <input class="btnSelecionado" id="btn0" type="button" value="Livros" onclick="setImage(0)">
+                        <input class="btnSelecionado" id="btn1" type="button" value="TW1" onclick="setImage(1)">
+                        <input class="btnSelecionado" id="btn2" type="button" value="TW2" onclick="setImage(2)">
+                        <input class="btnSelecionado" id="btn3" type="button" value="TW3" onclick="setImage(3)">
+                        <input class="btnSelecionado" id="btn3" type="button" value="Série" onclick="setImage(4)">
+                    </div>
+                    <div class="imgGeralt"><img id="imgAtual" src="../imagens/geralt_TW3.png" alt=""></div>
+
+
+                </aside>
             </div>
+
+
+
 
         </div>
 
-        <footer id="rodape"><!--inicio rodape-->
-            
-            <p><a href="contato.html">Contato</a> <br><br> &copy; 2020 TODOS OS DIREITOS RESERVADOS
-            </p>
+        </div>
+
+        <footer id="rodape">
+            <!--inicio rodape-->
+
+            <div>
+                <a href="contato.html">Contato</a>
+                <br><br>
+                <span id="span-date">Sexta-feira, 07 de agosto de 2020</span><br><br>
+                &copy; 2020 TODOS OS DIREITOS RESERVADOS
+            </div>
 
             <nav id="redes">
-                <ol id="olRedes">
+                <ul id="olRedes">
                     <li><a href="https://www.instagram.com/witchernetflix/?hl=pt-br"><img src="../imagens/ic_instagram.png"></a></li>
                     <li><a href="https://facebook.com/thewitcher"><img src="../imagens/ic_facebook.png"></a></li>
                     <li><a href="https://twitter.com/witchergame"><img src="../imagens/ic_twitter.png"></a></li>
-                </ol>
+                </ul>
             </nav>
-        </footer><!--fim rodape-->
+        </footer>
+        <!--fim rodape-->
 
-        <script src="../js/scriptGeralt.js"></script>
+        <script src="../js/script.js"></script>
 
-        </body>
+</body>
+
 </html>

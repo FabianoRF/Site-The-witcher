@@ -1,30 +1,25 @@
-//inicio script para fixar cabeçalho
-function fixaCabecalho(){
-    var cabecalho = document.querySelector('.cabecalhoAux');
-    var cabecalhoEspaco = document.querySelector('.cabecalhoEspaco');
-	var cabecalhoOffset = cabecalho.offsetTop;//retorna a medida da distancia do elemento em relação ao topo
+const dias = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"]
+const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Agosto", "Outubro", "Novembro", "Dezembro"]
 
-	function verificaCabecalho() {
-		var scrollTop = window.scrollY;
-		var cabecalhoAltura = cabecalho.offsetHeight;
-
-		if(scrollTop >= cabecalhoOffset) {
-			// rolagem da página passou do elemento, vamos fixá-lo
-			cabecalho.classList.add('cabecalhoAuxFixo');
-			// ativa cabecalho-espaco para ocupar o espaço perdido
-			cabecalhoEspaco.style.height = cabecalhoAltura + 'px';
-		} else {
-			// retira a classe adicional do elemento
-			cabecalho.classList.remove('cabecalhoAuxFixo');
-			// retira a altura do cabecalho-espaco
-			cabecalhoEspaco.style.height = 0;
-		}
-	}
-	window.addEventListener('load', verificaCabecalho);//ao carregar chama a função fixa
-	window.addEventListener('scroll', verificaCabecalho);//quando ocorre o evento de scroll
-	window.addEventListener('resize', verificaCabecalho);//quando ocorre o evento de resize
+function setImage(id) {
+	const images=['geralt_livro.jpg', 'geralt_TW1.jpg', 'geralt_TW2.png', 'geralt_TW3.png', 'geralt_netflix.png']
+	let imgAtual=document.getElementById('imgAtual')
+ 
+	imgAtual.src=`../imagens/${images[id]}`
 }
 
-window.addEventListener('load', fixaCabecalho);//ao carregar chama a função fixa
 
-//fim script de fixar cabeçalho
+function handleButtonContato(){
+	window.alert('Obrigado pelo contato!');
+
+	window.location.href='home.html'
+}
+
+function handleRefreshDate(){
+	const date=new Date()
+	const spanDay = document.getElementById('span-date');
+
+	spanDay.innerHTML=`${date.getDate()} de ${meses[date.getMonth()]} de ${date.getFullYear()}`
+}
+
+handleRefreshDate()

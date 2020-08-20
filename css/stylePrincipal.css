@@ -156,8 +156,9 @@ footer#rodape p{
     color: var(--primary);
 }
 
-footer#rodape nav#redes ol#olRedes li{
-    display: inline-block;
+footer#rodape nav#redes ul#olRedes{
+    display: flex;
+    list-style: none;
     
 }
 
