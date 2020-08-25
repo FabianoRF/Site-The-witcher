@@ -1,5 +1,5 @@
 const dias = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"]
-const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Agosto", "Outubro", "Novembro", "Dezembro"]
+const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
 
 function setImage(id) {
 	const images=['geralt_livro.jpg', 'geralt_TW1.jpg', 'geralt_TW2.png', 'geralt_TW3.png', 'geralt_netflix.png']
@@ -7,7 +7,6 @@ function setImage(id) {
  
 	imgAtual.src=`../imagens/${images[id]}`
 }
-
 
 function handleButtonContato(){
 	window.alert('Obrigado pelo contato!');
@@ -19,7 +18,7 @@ function handleRefreshDate(){
 	const date=new Date()
 	const spanDay = document.getElementById('span-date');
 
-	spanDay.innerHTML=`${date.getDate()} de ${meses[date.getMonth()]} de ${date.getFullYear()}`
+	spanDay.innerHTML=`${dias[date.getDay()]}, ${date.getDate()} de ${meses[date.getMonth()-1]} de ${date.getFullYear()}`
 }
 
 handleRefreshDate()
